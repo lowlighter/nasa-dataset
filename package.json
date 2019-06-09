@@ -1,0 +1,22 @@
+{
+  "name": "nasa-dataset",
+  "version": "1.0.0",
+  "description": "Nasa images dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowlighter/nasa.git"
+  },
+  "author": "lowlighter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lowlighter/nasa/issues"
+  },
+  "homepage": "https://github.com/lowlighter/nasa#readme",
+  "dependencies": {
+    "sharp": "^0.22.1"
+  }
+}
