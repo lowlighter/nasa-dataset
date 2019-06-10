@@ -6,7 +6,7 @@
   const progress = require("cli-progress")
   
 //Generate images
-  if (fs.existsSync("raw2")) {
+  if (fs.existsSync("raw")) {
     //Init
       let { size, overlap, rotate } = argv
       console.log(`size: ${size}x${size}\noverlap: ${overlap*100}%\nrotate: ${rotate}`)
@@ -23,12 +23,12 @@
       fse.emptyDirSync("computed")
 
     //Generate images
-      let files = fs.readdirSync("raw2")
+      let files = fs.readdirSync("raw")
       console.log(`files: ${files.length}`)
       bar.start(files.length, 0)
       files.forEach(async file => {
         //Prepare image
-          let image = sharp(`raw2/${file}`)
+          let image = sharp(`raw/${file}`)
           let {width, height} = await image.metadata()
 
         //Generate sub-images
